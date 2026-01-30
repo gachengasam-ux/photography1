@@ -34,7 +34,7 @@ section
     text-align: center;
     margin-top: 10px;
     color: #666;
-    margin-bottom: 0%;
+    
     
 }
 .welcome p
@@ -45,6 +45,7 @@ section
 .gallery-text
 {
     margin-top: 10px;
+    padding: 0%;
 }
 
 
