@@ -1,0 +1,181 @@
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.header
+{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1
+{
+    margin: 0;
+}
+
+section
+{
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.welcome
+{
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+.welcome p
+{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.gallery-text
+{
+    margin-top: 10px;
+}
+
+
+
+.gallery-text h1
+{
+    text-align: center;
+    color: #333;
+}
+.gallery-description{
+    margin-top: 10px;
+}
+
+.gallery-description p
+{
+    text-align: center;
+    color: #666;
+
+}
+
+.gallery-images
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.gallery-images img
+{
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-us p
+{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.About-text{
+    text-align: center;
+    margin-top: 10px;
+    color: #666;
+}
+
+.services-heading h2
+{
+    text-align: center;
+    color: #333;
+}
+.services-description p
+{
+    text-align: center;
+    color: #666;
+}
+
+.services ol
+{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: decimal;
+    color: #444;
+}
+
+.services ol li
+{
+    margin: 10px 0;
+    font-size: 16px;
+}
+.contact-form
+{
+    margin-top: 10px;
+}
+.contact-form h1
+{
+    text-align: center;
+    color: #333;
+}
+.form
+{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.form label
+{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form input, .form textarea
+{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+.form button
+{
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form button:hover
+{
+    background-color: #555;
+}
+.footer
+{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.footer p
+{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+                      
