@@ -1,82 +1,107 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam's photography</title>
+    <title>Sam's Photography | Capturing Moments</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section>
-    <div class="header"><header><h1>Sam's Photography</h1></header></div>
-    <div class="welcome"><p>Welcome to Sam's Photography,
-         where we capture moments that last a lifetime.</p></div>
-</section>
-<section>
-    <div class="gallery-text"><h1>GALLERY</h1></div>
-    <div class="gallery-description"><p>here is our collection of photographs</p>
-   <div class="gallery-images">
-    <img src="assets/images/image 1.jpg" alt="" height="300" width="400">
-    <img src="assets/images/image 2.jpg" alt="" height="300" width="400">
-    <img src="assets/images/image 3.jpg" alt="" height="300" width="400">
-    <img src="assets/images/image 4.jpg" alt="" height="300" width="400">
+
+<header class="header">
+    <div class="header-content">
+        <h1>Sam's Photography</h1>
+        <p>Moments that last a lifetime</p>
     </div>
+</header>
 
-</div>
-</section>
-<section class="about-us"><h1>About Us</h1></section>
-<section class="About-text">
-    <p>Sam's Photography is a creative studio that captures art through the lens of a camera and appreciation of art.
-        We believe photography is more than just images — it’s about telling stories that feel real, honest, and timeless.
+<main>
+    <section class="welcome">
+        <p>Welcome to Sam's Photography, where we capture art through the lens with a passion for storytelling that is real, honest, and timeless.</p>
+    </section>
 
-    </p>
-    <p>Founded by Sam, a passionate photographer with over a decade of experience, 
-    our studio specializes in portrait, event, and commercial photography. Our mission is to
-     create stunning visuals that resonate with our clients and leave a lasting impression.</p>
-</section>
-<section>
-<div class="services-heading"><h2>Our Services</h2></div>
-<div class="services-description"><p>We offer a range of photography services tailored to your needs.</p></div>
-<div>
-<ol>
-    <li>Portrait Photography</li>
-    <li>Event Photography</li>
-    <li>Wedding Photography</li>
-    <li>Commercial Photography</li>
-</ol>
-</div>
-</section>
-<section>
-    <div class="contact-form"><h1>Contact Form</h1></div>
-     <form action="/submit_page.php" method="post" class="contact-form">
-    <div class="form">
-        <label for="name">Enter Your Name:</label> 
-        <input type="text" id="name" name="name" required />
-    </div>
-
-       <div class="form">
-         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required/>
-       </div>
-
-        <div class="form">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+    <section id="gallery">
+        <div class="gallery-text"><h1>Gallery</h1></div>
+        <div class="gallery-images">
+            <img src="assets/images/image 1.jpg" alt="Portrait photography sample">
+            <img src="assets/images/image 2.jpg" alt="Event photography sample">
+            <img src="assets/images/image 3.jpg" alt="Wedding photography sample">
+            <img src="assets/images/image 4.jpg" alt="Nature photography sample">
         </div>
-        <input type="submit" value="Submit">
-     
-    </form>
-</section>
-<section>
-    <div class="footer">
-        <footer><p>&copy; 2024 Sam's Photography. All rights reserved.</p></footer>
-    </div>
+    </section>
 
-</section>
+    <section class="about-us">
+        <h1>About Us</h1>
+        <div class="About-text">
+            <p>Founded by Sam, a passionate photographer with over a decade of experience, our studio specializes in portrait, event, and commercial photography.</p>
+            <p>Our mission is to create stunning visuals that resonate with our clients and leave a lasting impression.</p>
+        </div>
+    </section>
 
+    <section id="services">
+        <div class="services-heading"><h2>Our Services</h2></div>
+        <div class="services-description">
+            <p>Tailored photography services for your unique needs:</p>
+            <ol>
+                <li>Portrait Photography</li>
+                <li>Event Photography</li>
+                <li>Wedding Photography</li>
+                <li>Commercial Photography</li>
+            </ol>
+        </div>
+    </section>
 
-    
+    <section id="contact">
+        <div class="contact-form-header">
+            <h1>Get In Touch</h1>
+            <p>Fill out the form below to book a session or ask a question.</p>
+        </div>
+
+        <form action="/submit_page.php" method="post" class="contact-form">
+            <!--  -->
+            <div style="display:none;">
+                <label>Leave this field blank</label>
+                <input type="text" name="honeypot" value="" />
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full Name</label> 
+                <input type="text" id="name" name="name" placeholder="John Doe" required maxlength="100">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required maxlength="150">
+            </div>
+
+            <div class="form-group">
+                <label for="service_interest">Service of Interest</label>
+                <select id="service_interest" name="service_interest">
+                    <option value="portrait">Portrait</option>
+                    <option value="event">Event</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="commercial">Commercial</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell me about your vision..." required maxlength="2000"></textarea>
+            </div>
+
+            <!--  Placeholder  -->
+            <input type="hidden" name="token" value="static_token_for_now">
+
+            <div class="form-submit">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Sam's Photography. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
-    
-
-
